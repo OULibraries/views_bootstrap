@@ -1,4 +1,6 @@
 <div id="views-bootstrap-carousel-<?php print $id ?>" class="<?php print $classes ?>" <?php print $attributes ?>>
+  
+  <div class="hidden-xs">
   <?php if ($indicators): ?>
     <!-- Carousel indicators -->
     <ol class="carousel-indicators">
@@ -7,6 +9,7 @@
       <?php endforeach ?>
     </ol>
   <?php endif ?>
+  </div>
 
   <!-- Carousel items -->
   <div class="carousel-inner">
@@ -19,11 +22,14 @@
 
   <?php if ($navigation): ?>
     <!-- Carousel navigation -->
-    <a class="carousel-control left" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="prev">
-      <span class="icon-prev"></span>
+    <a class="carousel-control left" data-target="#views-bootstrap-carousel-<?php print $id ?>" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="carousel-control right" href="#views-bootstrap-carousel-<?php print $id ?>" data-slide="next">
-      <span class="icon-next"></span>
+    <a class="carousel-control right" data-target="#views-bootstrap-carousel-<?php print $id ?>" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   <?php endif ?>
+  
+  
+  
 </div>

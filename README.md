@@ -1,2 +1,2 @@
 # views_bootstrap
-This is OU libraries customized version of views bootstrap layouts. We reco
+This is OU libraries customized version of views bootstrap layouts. We recommend using the original
